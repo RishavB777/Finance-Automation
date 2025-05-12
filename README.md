@@ -27,7 +27,7 @@ Ready to automate your finances? Here's how to get started:
         ```
     * Install the necessary dependencies. While specific requirements might vary for each script, you can generally install the core libraries using:
         ```bash
-        pip install pandas numpy matplotlib seaborn
+        pip install -r "requirements.txt"
         # Install any other specific libraries mentioned in the script's documentation
         ```
 
