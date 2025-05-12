@@ -43,7 +43,7 @@ def load_transactions(file):
         df.columns = [col.strip() for col in df.columns]
         df["Amount"] = df["Amount"].str.replace(",","").astype(float)
         df["Date"] = pd.to_datetime(df["Date"], format="%d %b %Y")
-        st.write(df)
+
         return categorize_transactions(df)
     
     except Exception as e:
