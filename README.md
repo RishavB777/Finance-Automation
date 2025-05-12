@@ -6,28 +6,7 @@
 [![License](https://img.shields.io/github/license/RishavB777/Finance-Automation)](https://github.com/RishavB777/Finance-Automation/blob/main/LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/RishavB777/Finance-Automation)](https://github.com/RishavB777/Finance-Automation/commits/main)
 
-**Empowering Your Financial Decisions Through Automation**
 
-Welcome to the Finance-Automation repository! This project is a collection of scripts, tools, and resources designed to automate various aspects of personal finance management, data analysis, and investment research. Whether you're looking to streamline your budgeting, analyze stock market trends, or gain deeper insights into your financial health, this repository aims to provide you with practical and efficient solutions.
-
-## ✨ Key Features
-
-* **Budgeting & Expense Tracking:** Automate the categorization and analysis of your financial transactions from various sources.
-* **Investment Analysis:** Tools for fetching and analyzing stock data, performing basic portfolio analysis, and identifying potential investment opportunities.
-* **Financial Data Visualization:** Scripts to generate insightful charts and graphs to better understand your financial data.
-* **Report Generation:** Automate the creation of regular financial reports for tracking progress and identifying key trends.
-* **Customizable Solutions:** The scripts are designed to be modular and adaptable to your specific financial needs and data sources.
-
-## 🛠️ Technologies Used
-
-This project leverages a range of powerful and versatile technologies, including:
-
-* **Python:** The primary programming language for scripting and data manipulation.
-* **Pandas:** A fundamental library for data analysis and manipulation in Python.
-* **NumPy:** Essential for numerical computations and array operations.
-* **Matplotlib & Seaborn:** Libraries for creating static, interactive, and informative visualizations.
-* **APIs (e.g., for Stock Data):** Integration with various financial data providers to fetch real-time or historical information. (Specific APIs used will be detailed in individual script documentation).
-* **Potentially:** Libraries for web scraping (e.g., Beautiful Soup, Scrapy), database interaction (e.g., SQLAlchemy), and more, depending on the specific automation tasks.
 
 ## 🚀 Getting Started
 
