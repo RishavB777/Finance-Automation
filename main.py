@@ -123,13 +123,13 @@ def main():
                              use_container_width=True,
                              hide_index=True)
                 
-            fig = px.pie(
-                category_totals,
-                values="Amount",
-                names= "Category",
-                title="Expenses by Category"
-            )
-            st.plotly_chart(fig, use_container_width=True)
+                fig = px.pie(
+                    category_totals,
+                    values="Amount",
+                    names= "Category",
+                    title="Expenses by Category"
+                )
+                st.plotly_chart(fig, use_container_width=True)
 
             with tab2:
                 st.subheader("Payments Summary")
