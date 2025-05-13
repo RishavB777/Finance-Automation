@@ -1,64 +1,89 @@
-# Finance-Automation
+# Finance Dashboard
 
-[![GitHub Stars](https://img.shields.io/github/stars/RishavB777/Finance-Automation?style=social)](https://github.com/RishavB777/Finance-Automation/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/RishavB777/Finance-Automation?style=social)](https://github.com/RishavB777/Finance-Automation/network/members)
-[![GitHub Issues](https://img.shields.io/github/issues/RishavB777/Finance-Automation)](https://github.com/RishavB777/Finance-Automation/issues)
-[![License](https://img.shields.io/github/license/RishavB777/Finance-Automation)](https://github.com/RishavB777/Finance-Automation/blob/main/LICENSE)
-[![Last Commit](https://img.shields.io/github/last-commit/RishavB777/Finance-Automation)](https://github.com/RishavB777/Finance-Automation/commits/main)
+A Streamlit application for visualizing and categorizing personal finance transactions.  Upload a CSV, categorize transactions, and visualize your expenses.
 
+## 🌟 Features
 
+* **Transaction Upload:** 📁 Upload transaction data in CSV format.
+* **Data Processing:** ⚙️ Reads the CSV, parses dates/amounts, and categorizes transactions.
+* **Categorization:** 🏷️ Automatically categorizes transactions using keywords. Manually edit categories as needed.
+* **Visualization:** 📊 Provides a pie chart of expenses by category and a summary of payments.
+* **Customizable Categories:** ✏️ Add new categories and keywords.
+* **Persistent Categories:** 💾 Categories/keywords are saved in `categories.json` between sessions.
+* **Expense and Payment Analysis**: 📈 Separate tabs for viewing and analyzing expenses (debits) and payments (credits).
+* **Interactive Data Editing**: ✍️ Uses `st.data_editor` to allow users to edit transaction categories directly in the app.
+* **Category Management**: ➕ Users can add new categories via a text input.
+* **Detailed Expense Summary**: ℹ️ Displays a dataframe of expense totals per category.
 
-## 🚀 Getting Started
+## 🚀 How to Use
 
-Ready to automate your finances? Here's how to get started:
+1.  **Installation**
 
-1.  **Clone the Repository:**
-    ```bash
-    git clone [https://github.com/RishavB777/Finance-Automation.git](https://github.com/RishavB777/Finance-Automation.git)
-    cd Finance-Automation
-    ```
+    * Clone the repository:
 
-2.  **Installation:**
-    * It's highly recommended to create a virtual environment to manage dependencies:
+        ```bash
+        git clone [https://github.com/RishavB777/Finance-Automation.git](https://github.com/RishavB777/Finance-Automation.git)
+        cd Finance-Automation
+        ```
+    * Create a virtual environment:
+
         ```bash
         python -m venv venv
-        source venv/bin/activate  # On macOS/Linux
-        # venv\Scripts\activate  # On Windows
         ```
-    * Install the necessary dependencies. While specific requirements might vary for each script, you can generally install the core libraries using:
+    * Activate the virtual environment:
+        * Windows:
+
+            ```bash
+            venv\Scripts\activate
+            ```
+        * macOS and Linux:
+
+            ```bash
+            source venv/bin/activate
+            ```
+    * Install dependencies:
+
         ```bash
-        pip install -r "requirements.txt"
-        # Install any other specific libraries mentioned in the script's documentation
+        pip install -r requirements.txt
         ```
 
+2.  **Running the App**
 
-## 🤝 Contributing
+    * Run the Streamlit application:
 
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. If you have ideas for new automation scripts, improvements to existing ones, or bug fixes, you are highly welcome to contribute!
+        ```bash
+        streamlit run main.py
+        ```
 
-Please follow these guidelines:
+3.  **Using the App**
 
-1.  **Fork the repository.**
-2.  **Create your feature branch** (`git checkout -b feature/your-awesome-feature`).
-3.  **Commit your changes** (`git commit -am 'Add some awesome feature'`).
-4.  **Push to the branch** (`git push origin feature/your-awesome-feature`).
-5.  **Open a pull request.**
+    * Upload your transaction CSV file.
+    * View expenses and payments in separate tabs.
+    * Add/edit categories and keywords.
+    * Interact with the data and visualizations.
 
-Please ensure your code adheres to good coding practices and includes clear comments.
+## 🗂️ File Descriptions
 
-## 📄 License
+* `categories.json`: Stores transaction categories and keywords.
+* `main.py`: The main Streamlit application code.
+* `requirements.txt`: Lists required Python packages.
 
-This project is licensed under the [MIT License](https://github.com/RishavB777/Finance-Automation/blob/main/LICENSE). Feel free to use, modify, and distribute the code as per the terms of the license.
+## 🛠️ Dependencies
 
-## 🙏 Acknowledgements
+* [Streamlit](https://streamlit.io/): Web application framework.
+* [Pandas](https://pandas.pydata.org/): Data manipulation library.
+* [Plotly](https://plotly.com/): Visualization library.
 
-* The open-source community for providing the fantastic libraries and tools used in this project.
-* Individuals who have contributed ideas, feedback, and improvements.
+## 🗄️ `categories.json` Structure
 
-## 📬 Contact
+The `categories.json` file is a JSON dictionary. Keys are category names, and values are lists of keywords.
 
-If you have any questions, suggestions, or issues, please feel free to open an issue on GitHub.
-
----
-
-**Happy Automating Your Finances!**
+```json
+{
+    "Uncategorized": [],
+    "Shopping": ["NOON.COM", "LULU HYPERMARKET", "AMAZON AE"],
+    "Travel": [],
+    "Insurance": ["EMIRATES INSURANCE"],
+    "Bank Fee": ["ADCB BANK FEE"],
+    "Subscriptions": []
+}
